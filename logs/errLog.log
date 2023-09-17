@@ -1,0 +1,5 @@
+20230917	15:27:28	4f59af2e-e79f-49ef-a6e4-b1a708bca39e	Error: Not allowed by CORS	OPTIONS	/	https://ogs.google.com
+20230917	15:27:28	4fa2d4f1-2b1c-4c84-8df4-53cb2537af7b	Error: Not allowed by CORS	GET	/	https://ogs.google.com
+20230917	15:27:38	88035b5c-0a5b-4176-bd1c-95ed1446bb16	Error: Not allowed by CORS	OPTIONS	/	https://ogs.google.com
+20230917	15:27:38	c6c23acb-7e6b-4b63-8a19-cd46f69f7b30	Error: Not allowed by CORS	GET	/	https://ogs.google.com
+20230917	15:28:48	b2271ec3-4edc-4719-96f9-ddc439aaeaf9	Error: Not allowed by CORS	GET	/	null
