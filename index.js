@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const path = require("path");
-const cookieParser = require("cookie-parser"); // This middleware simplifies the process of handling cookies
+const cookieParser = require("cookie-parser"); 
 const cors = require("cors");
 const mongoose = require("mongoose");
 
@@ -23,8 +23,9 @@ app.use(cookieParser());
 
 app.use("/", express.static(path.join(__dirname, `/public`)));
 app.use("/", require("./routes/root"));
+app.use("/users", require("./routes/userRoutes"));
 
-app.use(errorHandler); // This error-handling middleware function is added at the end of the middleware function stack.
+app.use(errorHandler); 
 
 mongoose.connection.once("open", () => {
     console.log("Connected to DB");
