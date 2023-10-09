@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const path = require("path");
-const cookieParser = require("cookie-parser"); 
+const cookieParser = require("cookie-parser"); // This middleware simplifies the process of handling cookies
 const cors = require("cors");
 const mongoose = require("mongoose");
 
@@ -25,14 +25,15 @@ app.use("/", express.static(path.join(__dirname, `/public`)));
 app.use("/", require("./routes/root"));
 app.use("/users", require("./routes/userRoutes"));
 
-app.use(errorHandler); 
+app.use(errorHandler); // This error-handling middleware function is added at the end of the middleware function stack.
 
 mongoose.connection.once("open", () => {
     console.log("Connected to DB");
-    app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`));
 });
 
 mongoose.connection.on("error", (err) => {
     console.log(err);
     logEvents(`${err.no}: ${err.code}\t${err.syscall}\t${err.hostname}`, "mongoErrLog.log");
 });
+
+app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`));

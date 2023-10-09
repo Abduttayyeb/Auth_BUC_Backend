@@ -3,3 +3,7 @@
 20230917	15:27:38	88035b5c-0a5b-4176-bd1c-95ed1446bb16	Error: Not allowed by CORS	OPTIONS	/	https://ogs.google.com
 20230917	15:27:38	c6c23acb-7e6b-4b63-8a19-cd46f69f7b30	Error: Not allowed by CORS	GET	/	https://ogs.google.com
 20230917	15:28:48	b2271ec3-4edc-4719-96f9-ddc439aaeaf9	Error: Not allowed by CORS	GET	/	null
+20230926	16:31:15	34ca5db7-3d1b-4be8-92c3-1cf7567e81ae	SyntaxError: Unexpected token } in JSON at position 58	POST	/users	undefined
+20230926	16:36:20	14e0495c-c741-4138-9ca5-92c6bc4e5d1c	CastError: Cast to ObjectId failed for value "6512b916aa786d9c0bc53dfl" (type string) at path "_id" for model "User"	PATCH	/users	undefined
+20230926	16:36:50	a4d6b0e1-9d8f-455a-8a9c-c1f7e6a4e4b7	TypeError: user.findOne is not a function	PATCH	/users	undefined
+20230926	23:26:12	f441dac1-44a1-48c2-bf53-782a55826f34	SyntaxError: Unexpected string in JSON at position 58	POST	/users	undefined
