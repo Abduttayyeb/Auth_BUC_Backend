@@ -7,3 +7,6 @@
 20230926	16:36:20	14e0495c-c741-4138-9ca5-92c6bc4e5d1c	CastError: Cast to ObjectId failed for value "6512b916aa786d9c0bc53dfl" (type string) at path "_id" for model "User"	PATCH	/users	undefined
 20230926	16:36:50	a4d6b0e1-9d8f-455a-8a9c-c1f7e6a4e4b7	TypeError: user.findOne is not a function	PATCH	/users	undefined
 20230926	23:26:12	f441dac1-44a1-48c2-bf53-782a55826f34	SyntaxError: Unexpected string in JSON at position 58	POST	/users	undefined
+20231010	10:35:47	b726e4ef-ce00-4904-a5b0-219f7e092e59	ReferenceError: title is not defined	POST	/notes	undefined
+20231010	10:36:37	65f840eb-b896-42c3-adb2-0cd64ac6d499	ValidationError: Note validation failed: user: Path `user` is required.	POST	/notes	undefined
+20231010	10:36:50	346f0e0d-0d03-4715-992e-e2592f9987ee	ValidationError: Note validation failed: user: Path `user` is required.	POST	/notes	undefined

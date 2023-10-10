@@ -37,9 +37,9 @@ class userController {
         const userObject = { username, password: hashedPwd, roles };
         const user = await User.create(userObject);
         if (user) {
-            res.status(201).json({ message: `New user ${username} created` });
+            return res.status(201).json({ message: `New user ${username} created` });
         } else {
-            res.status(400).json({ message: "Invalid user data received" });
+            return res.status(400).json({ message: "Invalid user data received" });
         }
     }
 
