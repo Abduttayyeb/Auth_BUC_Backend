@@ -6,7 +6,7 @@ const router = express.Router();
 router.route("/")
         .get(notesController.getNotesRequestHandler)
         .post(notesController.createNotesRequestHandler)
-        // .patch()
-        // .delete();
+        .patch(notesController.updateNotesRequestHandler)
+        .delete(notesController.deleteNotesRequestHandler);
 
 module.exports = router;
